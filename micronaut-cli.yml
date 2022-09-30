@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: de.zorro909
+testFramework: junit
+sourceLanguage: java
+buildTool: maven
+features: [agorapulse-micronaut-worker, annotation-api, app-name, assertj, awaitility, data, data-jpa, graalvm, h2, http-client, jackson-databind, java, java-application, jdbc-hikari, junit, log4j2, lombok, maven, micronaut-aot, mockito, netty-server, openapi, problem-json, properties, readme, security, security-annotations, security-oauth2, shade, swagger-ui]
