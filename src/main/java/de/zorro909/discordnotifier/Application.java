@@ -1,4 +1,4 @@
-package de.zorro909;
+package de.zorro909.discordnotifier;
 
 import io.micronaut.core.annotation.NonNull;
 import io.micronaut.context.ApplicationContextBuilder;
@@ -25,4 +25,5 @@ public class Application {
     public static void main(String[] args) {
         Micronaut.run(Application.class, args);
     }
+
 }
