@@ -1,12 +1,12 @@
 package de.zorro909.discordnotifier;
 
-import io.micronaut.core.annotation.NonNull;
 import io.micronaut.context.ApplicationContextBuilder;
 import io.micronaut.context.ApplicationContextConfigurer;
 import io.micronaut.context.annotation.ContextConfigurer;
 import io.micronaut.runtime.Micronaut;
-import io.swagger.v3.oas.annotations.*;
-import io.swagger.v3.oas.annotations.info.*;
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.info.Info;
+import org.jetbrains.annotations.NotNull;
 
 @OpenAPIDefinition(
     info = @Info(
@@ -18,7 +18,7 @@ public class Application {
     @ContextConfigurer
     public static class DefaultEnvironmentConfigurer implements ApplicationContextConfigurer {
         @Override
-        public void configure(@NonNull ApplicationContextBuilder builder) {
+        public void configure(@NotNull ApplicationContextBuilder builder) {
             builder.defaultEnvironments("dev");
         }
     }

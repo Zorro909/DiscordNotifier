@@ -5,9 +5,9 @@ import io.micronaut.context.annotation.ConfigurationProperties;
 @ConfigurationProperties("discord")
 public class DiscordConfig {
     private String botToken;
-    private String channelId;
 
-    public DiscordConfig(){}
+    public DiscordConfig() {
+    }
 
     public String getBotToken() {
         return botToken;
@@ -16,15 +16,6 @@ public class DiscordConfig {
     public void setBotToken(String botToken) {
         this.botToken = botToken;
     }
-
-    public String getChannelId() {
-        return channelId;
-    }
-
-    public void setChannelId(String channelId) {
-        this.channelId = channelId;
-    }
-
 
 
 }
